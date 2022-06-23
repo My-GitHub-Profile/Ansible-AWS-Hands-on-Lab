@@ -1,0 +1,6 @@
+-K, --ask-become-pass  ask for privilege escalation password
+-k, --ask-pass         ask for connection password
+
+--ask-pass will prompt for your SSH password instead. 
+--ask-become-pass will prompt for your password to become root (by default) when used along with --become.
+
