@@ -1,1 +1,6 @@
-  DDD
+Steps to install ansible on ec2 instance:
+Ansible is available on amazon extras repository (EPEL) 
+
+
+sudo amazon-linux-extras install ansible2
+
