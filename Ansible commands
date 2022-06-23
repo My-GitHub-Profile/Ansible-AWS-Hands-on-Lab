@@ -1,3 +1,5 @@
 ssh-keygen 
 ssh-copy-id hostname@ipaddress
-ansible <tagname> -m ping  
+ansible <tagname> -m ping 
+ansible -i <inventory file path>
+
