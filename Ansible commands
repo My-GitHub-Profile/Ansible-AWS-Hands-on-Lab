@@ -1,1 +1,3 @@
-
+ssh-keygen 
+ssh-copy-id hostname@ipaddress
+ansible <tagname> -m ping  
