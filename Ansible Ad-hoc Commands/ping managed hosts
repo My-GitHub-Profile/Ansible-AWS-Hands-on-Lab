@@ -1,0 +1,3 @@
+The ad-hoc command below runs a ping module on all the hosts in the inventory file. 
+
+    ansible all -m ping
