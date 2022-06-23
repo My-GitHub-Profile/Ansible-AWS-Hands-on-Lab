@@ -1,0 +1,7 @@
+ansible multi -m command -a uptime 
+
+
+ansible multi -m shell -a uptime 
+
+
+ansible multi -a uptime
