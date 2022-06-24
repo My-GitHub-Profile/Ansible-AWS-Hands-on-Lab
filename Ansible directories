@@ -1,4 +1,4 @@
 Inventory file default location -> /etc/ansible/hosts
-ansible.cfg -> /etc/ansiblr/
+ansible.cfg -> /etc/ansible/
 hosts -> /etc/ansible
 roles -> /etc/ansible
