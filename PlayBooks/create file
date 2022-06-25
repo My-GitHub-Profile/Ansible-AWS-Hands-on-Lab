@@ -1,0 +1,5 @@
+---
+ - hosts: all
+   become: yes
+   tasks:
+   - file: path=/home/host1/test.txt state=touch
