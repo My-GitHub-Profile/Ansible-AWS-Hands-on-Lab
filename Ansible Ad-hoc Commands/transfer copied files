@@ -1,5 +1,3 @@
-ansible all -m fetch -a 'src=/home/master2/pb/ dest=/home/geekflare/example/ flat=yes'
-
-ansible all -m service -a 'name=nginx state=latest' --become
-
-ansible all -s -m group -a "name=weblogic state=present"
+ansible all -m copy -a "src=  dest= "
+ansible all -m copy -a "content='hello' dest= "
+ansible all -m copy -a "content='hello' dest=   backup=yes"
