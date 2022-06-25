@@ -1,0 +1,1 @@
+ansible all -m fetch "src= dest= "  mention complete paths including home and usernames 
