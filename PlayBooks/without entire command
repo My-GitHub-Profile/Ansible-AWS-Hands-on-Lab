@@ -1,0 +1,10 @@
+#!/usr/bin/ansible-playbook
+ - name: This playbook is to install nano and httpd
+   hosts: localhost
+   become: yes
+   tasks:
+   - name: This task is to install nano
+     yum: name=nano state=present
+   - name: this task is to install httpd
+     yum: name=httpd state=present
+~                                          
