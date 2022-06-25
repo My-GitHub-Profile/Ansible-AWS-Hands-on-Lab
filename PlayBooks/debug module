@@ -1,0 +1,48 @@
+#!/usr/bin/ansible-playbook
+ - name: This playbook is to understand debug module
+   hosts: localhost
+   tasks:
+   - name: displaymessgae(debug)
+      debug: msg="hey wassup" 
+      
+      
+      
+ ============ Multiple message
+ #!/usr/bin/ansible-playbook
+ - name: This playbook is to understand debug module
+   hosts: localhost
+   tasks:
+   - name: displaymessgae(debug)
+      debug: 
+       msg:
+       - "hey wassup" 
+       - "peeepeeep"
+       - "nierbnero"
+       
+================= variables
+
+#!/usr/bin/ansible-playbook
+ - name: This playbook is to understand debug module
+   hosts: localhost
+   tasks:
+   - name: displaymessgae(debug)
+      debug: 
+       msg:
+       - "host name is {{inventory_hostname}}"  (both message an dvariables can be allowed but with {{}} for variables)
+       var: inventory_hostname                 (only variable is allowed without {{}} )       in this case msg or var only one can written instaed of both 
+       
+==================== verbosity
+
+
+#!/usr/bin/ansible-playbook
+ - name: This playbook is to understand debug module
+   hosts: localhost
+   tasks:
+   - name: displaymessgae(debug)
+      debug: 
+       msg:
+       - "default message"  
+       -  "verbosity is 2"
+       verbosity: 2
+                     
+
