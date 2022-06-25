@@ -1,0 +1,12 @@
+---
+ - name: This playbook is to install nanoandhttpd
+   hosts: localhost
+   become: yes
+   tasks:
+   - name: This task is to install nano
+     yum: name=nano state=present
+   - name: this task is to install httpd
+     yum: name=httpd state=present
+     
+     
+     This playbook can be used to install packages on ansible controller/master/any local host
