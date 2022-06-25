@@ -1,10 +1,10 @@
 ---
  - hosts: all
    become: yes
-tasks:
+   tasks:
    - yum: name=git state=present
 
  - hosts: all
    become: yes
-tasks:
+   tasks:
    - yum: name=git state=absent
