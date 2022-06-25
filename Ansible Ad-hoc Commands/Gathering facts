@@ -1,0 +1,2 @@
+ansible all -m setup 
+ansible all -m setup -a "filter=ansible_mounts"
