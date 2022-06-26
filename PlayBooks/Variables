@@ -1,1 +1,9 @@
-#
+#!/usr/bin/ansible-playbook
+ - name: Variables display
+   hosts: localhost
+   vars: 
+    x:21
+   tasks:
+   - name: displaymessgae(debug)
+      debug: msg="hey wassup" 
+      var: x
