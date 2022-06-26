@@ -5,5 +5,44 @@
     x:21
    tasks:
    - name: displaymessgae(debug)
-      debug: msg="hey wassup" 
-      var: x
+      debug: 
+       var: x
+=======================================  mutliple variables
+
+#!/usr/bin/ansible-playbook
+ - name: Variables display
+   hosts: localhost
+   vars: 
+    x: 21
+    my_num: 3799
+    my_name: "manu"
+    my_b: false  
+   tasks:
+   - name: displaymessgae(debug)
+     debug: 
+       msg:
+        - "The value of x is {{x}}"
+        - "my_name is {{my_name}}"
+        - "my_num is {{my_num}}"
+        - "my_b is {{my_b}}"
+       
+=================================================   kNOW THE DATA TYPE OF THE VARIABLES
+#!/usr/bin/ansible-playbook
+ - name: Variables display
+   hosts: localhost
+   vars: 
+    x: 21
+    my_num: 3799
+    my_name: "manu"
+    my_b: false  
+   tasks:
+   - name: displaymessgae(debug)
+     debug: 
+       msg:
+        - "The value of x is {{x}} and type is {{x|type_debug}}"   ->  int
+        - "my_name is {{my_name}} and type is: {{my_name|type_debug}}"  -> ansibleunicode
+        - "my_num is {{my_num}} and type is {{my_num|type_debug}}" ->int
+        - "my_b is {{my_b}} and type is {{my_b|type_debug}}"  ->bool
+        
+ ============================================================
+ 
