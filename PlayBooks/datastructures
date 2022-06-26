@@ -1,1 +1,12 @@
 
+#!/usr/bin/ansible-playbook
+ - name: using data sequenc/list data structure
+   hosts: localhost
+   vars: 
+    set: ['httpd','nginx','nano','wget','git']
+   tasks:
+   - name: data structures
+     debug: 
+       var: set
+   - name: Installing above set
+     
